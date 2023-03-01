@@ -1,10 +1,12 @@
 from typing import List
 
+
 def median(l: List[int]) -> float:
     n = len(l)
     if n % 2 == 0:
         return (l[(n // 2) - 1] + l[n // 2]) / 2
     return l[n // 2]
+
 
 def ans(l1: List[int], l2: List[int]) -> float:
     n1, n2 = len(l1), len(l2)
